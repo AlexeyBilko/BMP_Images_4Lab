@@ -8,9 +8,9 @@ namespace BMP_images
 {
     public class Pixel
     {
-        public uint Green { get; set; }
-        public uint Blue { get; set; }
-        public uint Red { get; set; }
+        public byte Green { get; set; }
+        public byte Blue { get; set; }
+        public byte Red { get; set; }
 
         public Pixel()
         {
@@ -19,18 +19,11 @@ namespace BMP_images
             Red = 0;
         }
 
-        public Pixel(int g, int b, int r)
+        public Pixel(int r, int g, int b)
         {
-            Green = (uint)g;
-            Blue = (uint)b;
-            Red = (uint)r;
-        }
-
-        public void ChangeColors(int g, int b, int r)
-        {
-            Green += (uint)g;
-            Blue += (uint)b;
-            Red += (uint)r;
+            Green = (byte)g;
+            Blue = (byte)b;
+            Red = (byte)r;
         }
     }
 }
