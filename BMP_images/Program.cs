@@ -11,7 +11,7 @@ namespace BMP_images
         static void Main(string[] args)
         {
             Image image = new Image("input.bmp");
-            image.Converts("output.bmp", 8);
+            image.Converts("output.bmp", 6);
 
             Console.WriteLine("Enlarging image " + 4 + " times... Done.");
             Console.WriteLine("Written result to " + "output.bmp");
