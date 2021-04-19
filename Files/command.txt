@@ -1,0 +1,1 @@
+BMP_images.exe input.bmp output.bmp 2
