@@ -91,6 +91,7 @@ namespace BMP_images
         {
             width *= count;
             height *= count;
+            
             int padding = (4 - ((width * 3) % 4)) % 4;
             BMPImageSize = 54 + height * width * 3 + padding * height;
 
@@ -115,6 +116,8 @@ namespace BMP_images
                 writer.Write('B');
                 writer.Write('M');
                 writer.Write(BMPImageSize);
+
+
                 for (int i = 0; i < 12; i++)
                 {
                     writer.Write(headerInfo[i]);
